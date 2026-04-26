@@ -1,5 +1,5 @@
 """
-ITERALIGN adapted for SmolLM2-360M (SLM)
+ITERALIGN adapted for SmolLM-135M (SLM)
 - Inference: HuggingFace transformers (replaces vLLM)
 - SFT: HuggingFace Trainer (replaces FastChat + torchrun 8xGPU)
 - Oracle: Gemini via OpenAI-compatible API (replaces GPT-3.5-turbo)
@@ -29,8 +29,8 @@ BATCH_SIZE = 20              # Number of prompts per iteration
 # ═══════════════════════════════════════════════════════════════════════════════
 
 # ─── Auto-download model if not present ────────────────────────────────────────
-MODEL_DIR = "./models/SmolLM2-360M"   # already downloaded here
-MODEL_REPO = "HuggingFaceTB/SmolLM2-360M"
+MODEL_DIR = "./models/SmolLM-135M"   # already downloaded here
+MODEL_REPO = "HuggingFaceTB/SmolLM-135M"
 
 if not Path(MODEL_DIR).exists() or not any(Path(MODEL_DIR).iterdir()):
     print(f"Model not found at {MODEL_DIR}. Downloading from HuggingFace...")
@@ -64,7 +64,7 @@ if DATASET not in DATASET_FILES:
     raise ValueError(f"Unknown DATASET '{DATASET}'. Choose from: {list(DATASET_FILES)}")
 
 # Output dir is per-dataset so runs don't overwrite each other
-OUTPUT_DIR = f"./output_smollm2-360m_{DATASET}"
+OUTPUT_DIR = f"./output_smollm2-135m_{DATASET}"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # ─── Load data ─────────────────────────────────────────────────────────────────
