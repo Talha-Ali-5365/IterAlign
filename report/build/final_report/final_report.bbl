@@ -1,0 +1,75 @@
+\begin{thebibliography}{10}
+
+\bibitem{allal2024smollm}
+Loubna~Ben Allal, Anton Lozhkov, Elie Bakouch, Leandro von Werra, and Thomas
+  Wolf.
+\newblock {SmolLM}: Blazingly fast and remarkably powerful, 2024.
+
+\bibitem{bai2022cai}
+Yuntao Bai, Saurav Kadavath, Sandipan Kundu, Amanda Askell, Jackson Kernion,
+  Andy Jones, et~al.
+\newblock Constitutional {AI}: Harmlessness from {AI} feedback, 2022.
+
+\bibitem{bhardwaj2023redteaming}
+Rishabh Bhardwaj and Soujanya Poria.
+\newblock Red-teaming large language models using chain of utterances for
+  safety-alignment, 2023.
+
+\bibitem{chen2024iteralign}
+Xiusi Chen, Hongzhi Wen, Sreyashi Nag, Chen Luo, Qingyu Yin, Ruirui Li, Zheng
+  Li, and Wei Wang.
+\newblock {I}ter{A}lign: Iterative constitutional alignment of large language
+  models.
+\newblock In {\em Proceedings of the 2024 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies (Volume 1: Long Papers)}, pages 1423--1433. Association for
+  Computational Linguistics, 2024.
+
+\bibitem{vicunabench2023}
+Wei-Lin Chiang, Zhuohan Li, Zi~Lin, Ying Sheng, Zhanghao Wu, Hao Zhang, Lianmin
+  Zheng, Siyuan Zhuang, Yonghao Zhuang, Joseph~E. Gonzalez, Ion Stoica, and
+  Eric~P. Xing.
+\newblock {Vicuna}: An open-source chatbot impressing {GPT-4} with 90\%*
+  {ChatGPT} quality.
+\newblock \url{https://lmsys.org/blog/2023-03-30-vicuna/}, 2023.
+
+\bibitem{dettmers2023qlora}
+Tim Dettmers, Artidoro Pagnoni, Ari Holtzman, and Luke Zettlemoyer.
+\newblock {QLoRA}: Efficient finetuning of quantized {LLM}s.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)},
+  2023.
+
+\bibitem{ganguli2022redteam}
+Deep Ganguli, Liane Lovitt, Jackson Kernion, et~al.
+\newblock Red teaming language models to reduce harms: Methods, scaling
+  behaviors, and lessons learned, 2022.
+
+\bibitem{hu2022lora}
+Edward~J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean
+  Wang, Lu~Wang, and Weizhu Chen.
+\newblock {LoRA}: Low-rank adaptation of large language models.
+\newblock In {\em International Conference on Learning Representations (ICLR)},
+  2022.
+
+\bibitem{peft2022}
+Sourab Mangrulkar, Sylvain Gugger, Lysandre Debut, Younes Belkada, Sayak Paul,
+  Benjamin Bossan, and Marian Tietz.
+\newblock {PEFT}: State-of-the-art parameter-efficient fine-tuning methods.
+\newblock \url{https://github.com/huggingface/peft}, 2022.
+
+\bibitem{ouyang2022instructgpt}
+Long Ouyang, Jeff Wu, Xu~Jiang, Diogo Almeida, Carroll Wainwright, Pamela
+  Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et~al.
+\newblock Training language models to follow instructions with human feedback.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)},
+  2022.
+
+\bibitem{touvron2023llama2}
+Hugo Touvron, Louis Martin, Kevin Stone, et~al.
+\newblock Llama 2: Open foundation and fine-tuned chat models, 2023.
+
+\bibitem{wolf2020transformers}
+Thomas Wolf, Lysandre Debut, Victor Sanh, et~al.
+\newblock Transformers: State-of-the-art natural language processing, 2020.
+
+\end{thebibliography}

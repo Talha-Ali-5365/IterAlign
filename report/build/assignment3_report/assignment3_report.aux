@@ -1,0 +1,72 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{chen2024iteralign}
+\citation{hu2022lora}
+\citation{ouyang2022instructgpt}
+\citation{bai2022cai}
+\citation{chen2024iteralign}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{1}{Introduction}{section.1}{}}
+\citation{ouyang2022instructgpt}
+\citation{bai2022cai}
+\citation{ganguli2022redteam}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Background and Paper Summary}{2}{section.2}\protected@file@percent }
+\newlabel{sec:background}{{2}{2}{Background and Paper Summary}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Alignment setting}{2}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}IterAlign loop}{2}{subsection.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces IterAlign pipeline: red-team prompts expose model failures, an oracle induces constitutions from negative outputs, the model regenerates safer responses under those constitutions, and the revised pairs are used for iterative fine-tuning.}}{3}{figure.1}\protected@file@percent }
+\newlabel{fig:pipeline}{{1}{3}{IterAlign pipeline: red-team prompts expose model failures, an oracle induces constitutions from negative outputs, the model regenerates safer responses under those constitutions, and the revised pairs are used for iterative fine-tuning}{figure.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Reproduction Summary}{3}{section.3}\protected@file@percent }
+\newlabel{sec:reproduction}{{3}{3}{Reproduction Summary}{section.3}{}}
+\citation{hu2022lora}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Assignment 2 reproduced Gemini-judge scores for the SmolLM-135M setup. Higher is better under the reported judge metric.}}{4}{table.1}\protected@file@percent }
+\newlabel{tab:assignment2-results}{{1}{4}{Assignment 2 reproduced Gemini-judge scores for the SmolLM-135M setup. Higher is better under the reported judge metric}{table.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Assignment 2 final Gemini-judge comparison for the SmolLM-135M reproduction.}}{4}{figure.2}\protected@file@percent }
+\newlabel{fig:gemini-judge}{{2}{4}{Assignment 2 final Gemini-judge comparison for the SmolLM-135M reproduction}{figure.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Proposed Method}{4}{section.4}\protected@file@percent }
+\newlabel{sec:method}{{4}{4}{Proposed Method}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Motivation}{4}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Hypothesis}{5}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}PEFT/LoRA IterAlign}{5}{subsection.4.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Method comparison for Assignment 3.}}{5}{table.2}\protected@file@percent }
+\newlabel{tab:method-comparison}{{2}{5}{Method comparison for Assignment 3}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Implementation details}{5}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Experimental Setup}{6}{section.5}\protected@file@percent }
+\newlabel{sec:setup}{{5}{6}{Experimental Setup}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Research design}{6}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Datasets}{6}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Baselines}{7}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Evaluation metrics}{7}{subsection.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Experiment matrix and acceptance criteria}{7}{subsection.5.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Experiment matrix.}}{7}{table.3}\protected@file@percent }
+\newlabel{tab:experiment-matrix}{{3}{7}{Experiment matrix}{table.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Results and Analysis}{7}{section.6}\protected@file@percent }
+\newlabel{sec:results}{{6}{7}{Results and Analysis}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Alignment score comparison}{8}{subsection.6.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Assignment 3 alignment comparison from the PEFT+LoRA efficiency result. Higher Gemini-judge score is better.}}{8}{table.4}\protected@file@percent }
+\newlabel{tab:assignment3-alignment}{{4}{8}{Assignment 3 alignment comparison from the PEFT+LoRA efficiency result. Higher Gemini-judge score is better}{table.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Training efficiency visualization}{8}{subsection.6.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Training efficiency comparison for SmolLM-135M. PEFT+LoRA reaches lower but comparable Gemini-judge scores after roughly four days, while full precision continues to improve until roughly seven days.}}{8}{figure.3}\protected@file@percent }
+\newlabel{fig:benchplot}{{3}{8}{Training efficiency comparison for SmolLM-135M. PEFT+LoRA reaches lower but comparable Gemini-judge scores after roughly four days, while full precision continues to improve until roughly seven days}{figure.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Estimated peak VRAM for full fine-tuning and LoRA fine-tuning on SmolLM-135M.}}{9}{table.5}\protected@file@percent }
+\newlabel{tab:vram-comparison}{{5}{9}{Estimated peak VRAM for full fine-tuning and LoRA fine-tuning on SmolLM-135M}{table.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Statistical analysis}{9}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{9}{section.7}\protected@file@percent }
+\newlabel{sec:discussion}{{7}{9}{Discussion}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Expected improvement}{9}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Why LoRA may work}{9}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Why LoRA may fail}{9}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Limitations}{9}{subsection.7.4}\protected@file@percent }
+\bibstyle{plain}
+\bibdata{refs}
+\bibcite{bai2022cai}{1}
+\bibcite{chen2024iteralign}{2}
+\bibcite{ganguli2022redteam}{3}
+\bibcite{hu2022lora}{4}
+\bibcite{ouyang2022instructgpt}{5}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}How final results should be interpreted}{10}{subsection.7.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{10}{section.8}\protected@file@percent }
+\newlabel{sec:conclusion}{{8}{10}{Conclusion}{section.8}{}}
+\gdef \@abspage@last{10}

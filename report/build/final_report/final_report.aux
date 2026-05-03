@@ -1,0 +1,118 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{ouyang2022instructgpt}
+\citation{bai2022cai}
+\citation{chen2024iteralign}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec:introduction}{{1}{1}{Introduction}{section.1}{}}
+\citation{hu2022lora}
+\citation{peft2022}
+\citation{ouyang2022instructgpt}
+\citation{touvron2023llama2}
+\citation{vicunabench2023}
+\citation{bai2022cai}
+\citation{chen2024iteralign}
+\citation{ganguli2022redteam}
+\citation{bhardwaj2023redteaming}
+\citation{hu2022lora}
+\citation{dettmers2023qlora}
+\citation{peft2022}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Background and Related Work}{2}{section.2}\protected@file@percent }
+\newlabel{sec:related}{{2}{2}{Background and Related Work}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Human-feedback alignment}{2}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Constitutional and AI-feedback alignment}{2}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Red teaming and harmfulness benchmarks}{2}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Parameter-efficient fine-tuning}{2}{subsection.2.4}\protected@file@percent }
+\citation{allal2024smollm}
+\citation{wolf2020transformers}
+\citation{peft2022}
+\citation{ouyang2022instructgpt}
+\citation{bai2022cai}
+\citation{ganguli2022redteam}
+\citation{chen2024iteralign}
+\citation{hu2022lora}
+\citation{dettmers2023qlora}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Small language models and implementation tools}{3}{subsection.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Proposed Architecture}{3}{section.3}\protected@file@percent }
+\newlabel{sec:architecture}{{3}{3}{Proposed Architecture}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}System components}{3}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Threat scenario and mitigation path}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Full fine-tuning versus adapter architecture}{3}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Proposed Methodology and Modeling}{3}{section.4}\protected@file@percent }
+\newlabel{sec:methodology}{{4}{3}{Proposed Methodology and Modeling}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Dataset definition}{3}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Preprocessing and data flow}{3}{subsection.4.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Related approaches and their relevance to this project.}}{4}{table.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:related}{{1}{4}{Related approaches and their relevance to this project}{table.caption.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces IterAlign architecture used throughout the project. Red-team prompts expose failures, the oracle induces rules from negative responses, the model revises answers under those rules, and the revised pairs are used for iterative supervised fine-tuning. The proposed IterAlign-LoRA{} extension changes only the final supervised fine-tuning block by replacing full-model updates with LoRA adapter updates.}}{4}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:pipeline}{{1}{4}{IterAlign architecture used throughout the project. Red-team prompts expose failures, the oracle induces rules from negative responses, the model revises answers under those rules, and the revised pairs are used for iterative supervised fine-tuning. The proposed \method {} extension changes only the final supervised fine-tuning block by replacing full-model updates with LoRA adapter updates}{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Mathematical formulation}{4}{subsection.4.3}\protected@file@percent }
+\newlabel{eq:response}{{1}{4}{Mathematical formulation}{equation.1}{}}
+\newlabel{eq:negative}{{2}{4}{Mathematical formulation}{equation.2}{}}
+\newlabel{eq:sftpool}{{3}{4}{Mathematical formulation}{equation.3}{}}
+\newlabel{eq:lora}{{4}{4}{Mathematical formulation}{equation.4}{}}
+\newlabel{eq:sftloss}{{5}{4}{Mathematical formulation}{equation.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Architecture-level comparison between the reproduced baseline and proposed method.}}{5}{table.caption.3}\protected@file@percent }
+\newlabel{tab:architecture}{{2}{5}{Architecture-level comparison between the reproduced baseline and proposed method}{table.caption.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Training procedure for the PEFT/LoRA extension. The method preserves the IterAlign data loop and changes only the parameter update step.}}{5}{figure.caption.4}\protected@file@percent }
+\newlabel{alg:method}{{2}{5}{Training procedure for the PEFT/LoRA extension. The method preserves the IterAlign data loop and changes only the parameter update step}{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Algorithm and complexity}{5}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Flowchart consistency}{5}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Methodological assumptions}{5}{subsection.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Experimental Setup}{5}{section.5}\protected@file@percent }
+\newlabel{sec:setup}{{5}{5}{Experimental Setup}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Compute and software environment}{5}{subsection.5.1}\protected@file@percent }
+\citation{chen2024iteralign}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Training and evaluation configuration.}}{6}{table.caption.5}\protected@file@percent }
+\newlabel{tab:hparams-final}{{3}{6}{Training and evaluation configuration}{table.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Training configuration}{6}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Baselines and metrics}{6}{subsection.5.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Experiment matrix and purpose.}}{6}{table.caption.6}\protected@file@percent }
+\newlabel{tab:experiment-matrix-final}{{4}{6}{Experiment matrix and purpose}{table.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Experiment design and acceptance criteria}{6}{subsection.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Results and Analysis}{6}{section.6}\protected@file@percent }
+\newlabel{sec:results}{{6}{6}{Results and Analysis}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Reproduced results}{6}{subsection.6.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Reproduced result summary. The original paper result is a qualitative reference because the evaluation metric and model scale differ from our course-scale reproduction.}}{7}{table.caption.7}\protected@file@percent }
+\newlabel{tab:reproduced}{{5}{7}{Reproduced result summary. The original paper result is a qualitative reference because the evaluation metric and model scale differ from our course-scale reproduction}{table.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Assignment 2 reproduction result. The aligned SmolLM-135M{} variants outperform the vanilla baseline under the Gemini judge.}}{7}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:judge-results}{{3}{7}{Assignment 2 reproduction result. The aligned \modelname {} variants outperform the vanilla baseline under the Gemini judge}{figure.caption.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Additional experiment results for the LoRA extension. Higher Gemini-judge score is better.}}{7}{table.caption.9}\protected@file@percent }
+\newlabel{tab:lora-results}{{6}{7}{Additional experiment results for the LoRA extension. Higher Gemini-judge score is better}{table.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Additional experiment results}{7}{subsection.6.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Efficiency comparison. Lower values are better for time and estimated VRAM.}}{7}{table.caption.11}\protected@file@percent }
+\newlabel{tab:efficiency}{{7}{7}{Efficiency comparison. Lower values are better for time and estimated VRAM}{table.caption.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Training efficiency}{7}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Result interpretation}{7}{subsection.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}Comparison against guideline metrics}{7}{subsection.6.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Training efficiency across datasets for SmolLM-135M{}. PEFT+LoRA reaches lower but comparable scores after roughly four days, while full fine-tuning continues to improve until roughly seven days.}}{8}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:benchplot-final}{{4}{8}{Training efficiency across datasets for \modelname {}. PEFT+LoRA reaches lower but comparable scores after roughly four days, while full fine-tuning continues to improve until roughly seven days}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.6}Observed trends}{8}{subsection.6.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{8}{section.7}\protected@file@percent }
+\newlabel{sec:discussion}{{7}{8}{Discussion}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Why LoRA preserves most of the gain}{8}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Why full fine-tuning remains stronger}{8}{subsection.7.2}\protected@file@percent }
+\bibstyle{plain}
+\bibdata{refs}
+\bibcite{allal2024smollm}{1}
+\bibcite{bai2022cai}{2}
+\bibcite{bhardwaj2023redteaming}{3}
+\bibcite{chen2024iteralign}{4}
+\bibcite{vicunabench2023}{5}
+\bibcite{dettmers2023qlora}{6}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Interpretation of DangerousQA{}}{9}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Limitations}{9}{subsection.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}Reproducibility and academic integrity}{9}{subsection.7.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{9}{section.8}\protected@file@percent }
+\newlabel{sec:conclusion}{{8}{9}{Conclusion}{section.8}{}}
+\newlabel{sec:code}{{8}{9}{Code and Experiment Submission}{section*.12}{}}
+\bibcite{ganguli2022redteam}{7}
+\bibcite{hu2022lora}{8}
+\bibcite{peft2022}{9}
+\bibcite{ouyang2022instructgpt}{10}
+\bibcite{touvron2023llama2}{11}
+\bibcite{wolf2020transformers}{12}
+\gdef \@abspage@last{10}
