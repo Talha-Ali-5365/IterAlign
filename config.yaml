@@ -1,0 +1,21 @@
+model:
+  repo: "HuggingFaceTB/SmolLM-135M"
+  local_dir: "./models/SmolLM-135M"
+  dtype: "float16"
+
+dataset:
+  name: "harmfulqa"
+  max_items: 1000
+  data_dir: "data"
+
+training:
+  batch_size: 20
+  output_dir: "./output"
+  num_epochs: 3
+  per_device_batch_size: 2
+  gradient_accumulation_steps: 4
+  learning_rate: 2e-6
+
+oracle:
+  model: "gemini-2.0-flash-lite-preview"
+  base_url: "https://generativelanguage.googleapis.com/v1beta/openai/"
