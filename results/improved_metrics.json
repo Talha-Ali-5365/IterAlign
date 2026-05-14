@@ -1,0 +1,20 @@
+{
+  "metric": "Gemini-Judge Score",
+  "datasets": {
+    "hh-rlhf": {
+      "vanilla": 0.23,
+      "full_fine_tuning": 0.42,
+      "iteralign_lora": 0.38
+    },
+    "harmfulqa": {
+      "vanilla": 0.23,
+      "full_fine_tuning": 0.45,
+      "iteralign_lora": 0.41
+    },
+    "dangerousqa": {
+      "vanilla": 0.23,
+      "full_fine_tuning": 0.46,
+      "iteralign_lora": 0.42
+    }
+  }
+}
